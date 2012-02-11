@@ -1,4 +1,4 @@
-class DefaultTimezone < ActiveRecord::Migration
+class ChiliprojectDefaultTimezone < ActiveRecord::Migration
   def self.up
     change_column :user_preferences, :time_zone, :string, :default => 'Berlin'
   end

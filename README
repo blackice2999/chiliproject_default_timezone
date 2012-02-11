@@ -1,0 +1,16 @@
+Simple Redmine / Chiliproject plugin to set the default language in user_preferences to Berlin by using the db migration.
+
+== Installation
+
+In your redmine / chiliproject directory, execute the following:
+
+  ruby script/plugin install git://github.com/blackice2999/chiliproject_default_timezone.git
+  rake db:migrate:plugins RAILS_ENV=production
+
+or if you use the "bundler" execute the following:
+
+  bundle exec ruby script/plugin install git://github.com/blackice2999/chiliproject_default_timezone.git
+  bundle exec rake db:migrate:plugins RAILS_ENV=production
+
+
+(Change environment to test or development if needed)
